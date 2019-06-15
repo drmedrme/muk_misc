@@ -19,8 +19,8 @@
 
 {
     "name": "MuK Mail Branding",
-    "summary": """Branding Features""",
-    "version": "12.0.1.0.1",
+    "summary": """Branding and Debranding""",
+    "version": "12.0.1.0.4",
     "category": "Discuss",
     "license": "AGPL-3",
     "website": "http://www.mukit.at",

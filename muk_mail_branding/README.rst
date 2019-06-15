@@ -1,11 +1,12 @@
-==========================
-MuK Accounting and Finance
-==========================
+=================
+MuK Mail Branding
+=================
 
-Activates the accounting dashboard and its features in Odoo. After installing the
-module, users can obtain the "Advisor" right for the "Accounting & Finance"
-application. This feature was included in Odoo version 9 and was removed from the
-Community Edition with version 10.
+This module complements the Branding Module. It automatically changes the chat bots
+name from "Odoo Bot" to "Bot" and debranes email templates during the rendering
+process. In case it is not an Enterprise version, the cron job which sends data to
+Odoo is automatically blocked. For Enterprise versions this is not possible due to
+the license regulations.
 
 Installation
 ============
@@ -85,12 +86,7 @@ No additional configuration is needed to use this module.
 Usage
 =============
 
-To activate the accounting dashboard and its features:
-
-#. Go to *Settings -> Users*.
-#. Click on a user to open the form view.
-#. In edit mode, open the *Accounting & Finance* selection.
-#. Select the now available *Advisor* group.
+After setting the parameters, the system is automatically branded.
 
 Credits
 =======
@@ -106,13 +102,6 @@ Images
 Some pictures are based on or inspired by the icon set of Font Awesome:
 
 * `Font Awesome <https://fontawesome.com>`_
-
-Projects
-------------
-
-Parts of the module are based on or inspired by:
-
-* `Odoo <https://github.com/odoo/odoo>`_
 
 Author & Maintainer
 -------------------

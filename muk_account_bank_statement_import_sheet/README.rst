@@ -1,11 +1,12 @@
-==========================
-MuK Accounting and Finance
-==========================
+=========================
+MuK Bank Statement Import
+=========================
 
-Activates the accounting dashboard and its features in Odoo. After installing the
-module, users can obtain the "Advisor" right for the "Accounting & Finance"
-application. This feature was included in Odoo version 9 and was removed from the
-Community Edition with version 10.
+Import bank statements from a variety of formats directly into Odoo. The fields
+"date", "name" and "amount" are mandatory, but can be assigned to any column using
+the wizard. The Balance field can be used to set the start and end balance. To set
+the start balance correctly, no amount must be entered in the first line. It is
+best to use the corresponding test files as a template.
 
 Installation
 ============
@@ -85,12 +86,7 @@ No additional configuration is needed to use this module.
 Usage
 =============
 
-To activate the accounting dashboard and its features:
-
-#. Go to *Settings -> Users*.
-#. Click on a user to open the form view.
-#. In edit mode, open the *Accounting & Finance* selection.
-#. Select the now available *Advisor* group.
+Go to your Accounting Dashboard and click on "Import Statement" in your Bank Journal.
 
 Credits
 =======
@@ -107,15 +103,8 @@ Some pictures are based on or inspired by the icon set of Font Awesome:
 
 * `Font Awesome <https://fontawesome.com>`_
 
-Projects
-------------
-
-Parts of the module are based on or inspired by:
-
-* `Odoo <https://github.com/odoo/odoo>`_
-
 Author & Maintainer
--------------------
+----------
 
 This module is maintained by the `MuK IT GmbH <https://www.mukit.at/>`_.
 
