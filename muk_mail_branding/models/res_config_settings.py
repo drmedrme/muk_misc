@@ -20,14 +20,33 @@
 #
 ###################################################################################
 
-from odoo import _, api, models
+from odoo import api, fields, models
 
-class Channel(models.Model):
+class ResConfigSettings(models.TransientModel):
+
+    _inherit = 'res.config.settings'
+
+    #----------------------------------------------------------
+    # Database
+    #----------------------------------------------------------
     
-    _inherit = 'mail.channel'
-
-    @api.model
-    def init_odoobot(self):
-        channel = super(Channel, self).init_odoobot()
-        channel.write({'name': 'Chat Bot'})
-        return channel
+    branding_system_user = fields.Many2one(
+        comodel_name='res.users', 
+        string='System User', 
+        required=True,
+        default=lambda self: self.sudo().env.user.id)
+    
+    branding_branding_system_image = fields.Binary(
+        string='System User Image',
+        related='branding_system_user.image',
+        readonly=False)
+    
+    branding_branding_system_name = fields.Char(
+        string='System User Name',
+        related='branding_system_user.name',
+        readonly=False)
+    
+    branding_branding_system_email = fields.Char(
+        string='System User Email',
+        related='branding_system_user.email',
+        readonly=False)
